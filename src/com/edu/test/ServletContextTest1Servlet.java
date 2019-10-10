@@ -29,8 +29,13 @@ public class ServletContextTest1Servlet extends HttpServlet{
 //		out.print("Context : " + sc);
 //		out.close();
 		
-		ServletContext sc = this.getServletContext();
-		out.print("Context : " + sc);
+//		sc = req.getServletContext();
+//		out.print("Context : " + sc);
+//		out.close();
+
+		sc = req.getServletContext();
+		String location = sc.getInitParameter("contextConfig");
+		out.print("location : " + location);
 		out.close();
 	}
 	
