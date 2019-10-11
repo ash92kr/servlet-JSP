@@ -13,7 +13,9 @@ import javax.servlet.http.HttpServletResponse;
 public class SecondServlet extends HttpServlet{
 
 	@Override
-	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+//	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
 		System.out.println("SecondServlet!");  // 로그창에 보여줌
 		
 		PrintWriter out = resp.getWriter();
