@@ -1,0 +1,1 @@
+All Contents Copyrihgt(c) 2017 Ruby Paper Co.,LTD
